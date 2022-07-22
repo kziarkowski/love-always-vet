@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/static/favicon.ico" />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap"
           />
           <link
             rel="stylesheet"

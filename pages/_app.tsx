@@ -33,7 +33,6 @@ export default function MyApp(props: MyAppProps) {
         </ThemeProvider>
       </main>
       <footer>
-        Hi Kait
       </footer>
     </CacheProvider>
   )

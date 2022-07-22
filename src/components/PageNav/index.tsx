@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Image from 'next/image';
 import logo from '../../../public/apple-touch-icon.png'
+import styled from '@emotion/styled';
 
 const pages = ['Home', 'About', 'Services', 'Resources', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -37,12 +38,13 @@ const PageNav = () => {
     setAnchorElUser(null);
   };
 
+  const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
+
   return (
+    <>
     <AppBar>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          {/* insert LAV Logo */}
           <Box sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -153,6 +155,8 @@ const PageNav = () => {
         </Toolbar>
       </Container>
     </AppBar>
+    <Offset />
+    </>
   );
 };
 export default PageNav;
