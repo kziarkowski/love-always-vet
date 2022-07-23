@@ -15,7 +15,17 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Montserrat"
+    fontFamily: "Montserrat",
+    h1: {
+      fontSize: "30px",
+      fontWeight: "300",
+      color: "#111111",
+      textAlign: "center",
+      textDecoration: "underline",
+      textDecorationColor: "#461b82",
+      textDecorationThickness: "2px",
+      textUnderlineOffset: "7px"
+    }
   }
 });
 
